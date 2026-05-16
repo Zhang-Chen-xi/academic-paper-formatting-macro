@@ -1,6 +1,6 @@
 # 科研论文排版宏 - 开发者TODO列表
 
-**项目仓库**：[科研论文排版宏]([https://github.com/your-username/research-paper-formatting-macro](https://github.com/Zhang-Chen-xi/academic-paper-formatting-macro))  
+**项目仓库**：[科研论文排版宏](https://github.com/Zhang-Chen-xi/academic-paper-formatting-macro)
 **当前版本**：v1.1.0 | **下一目标版本**：v2.0.0  
 **维护者**：张辰熙 & Vibe Coding Agents  
 **许可证**：Apache License 2.0
