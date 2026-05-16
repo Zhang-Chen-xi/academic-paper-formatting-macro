@@ -1,6 +1,6 @@
 # 科研论文排版宏 - 开发者TODO列表
 
-**项目仓库**：[科研论文排版宏](https://github.com/your-username/research-paper-formatting-macro)  
+**项目仓库**：[科研论文排版宏]([https://github.com/your-username/research-paper-formatting-macro](https://github.com/Zhang-Chen-xi/academic-paper-formatting-macro))  
 **当前版本**：v1.1.0 | **下一目标版本**：v2.0.0  
 **维护者**：张辰熙 & Vibe Coding Agents  
 **许可证**：Apache License 2.0
@@ -250,7 +250,7 @@
 
 - **v2.0.0**（预计2026年底）：完成所有P0和P1任务，增加撤销支持、完整标点转换、仅校正标点功能
 - **v2.1.0**（预计2027年）：完成P2任务，增加进度条、清除格式、批量处理功能
-- **v2.2.0**（预计2028年8）：完成P3任务，增加配置文件支持和单元测试
+- **v2.2.0**（预计2028年以后，或许永远没有）：完成P3任务，增加配置文件支持和单元测试
 
 ---
 
