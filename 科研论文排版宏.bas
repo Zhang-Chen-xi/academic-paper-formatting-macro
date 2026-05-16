@@ -30,8 +30,10 @@ Sub 科研论文排版()
     On Error GoTo ErrorHandler
     
     ' 1. 校验是否选中文本
-    If Selection.Type = wdNoSelection Then
-        MsgBox "请先选中需要排版的文本！", vbExclamation, "提示"
+    If Selection.Type = wdNoSelection Or Selection.Type = wdSelectionIP Then
+        MsgBox "请先选中（拖选高亮）需要排版的段落文本，再运行此宏。" & vbCrLf & _
+               "提示：将光标放在段落中但未拖选文字时，宏无法确定作用范围。", _
+               vbExclamation, "科研论文排版"
         Exit Sub
     End If
     
@@ -135,7 +137,7 @@ Private Function FindNearestPos(doc As Document, startPos As Long, endPos As Lon
 End Function
 
 ' ==============================================
-' 双引号：\" (U+0022) 与 \u201c\u201d(U+201C/U+201D) 互转
+' 双引号：" (U+0022) 与 ""(U+201C/U+201D) 互转
 ' 中文内容→弯引号+宋体，英文内容→直引号+TNR
 ' ==============================================
 Private Sub ProcessDoubleQuotes(rng As Range)
@@ -197,7 +199,7 @@ Private Sub ProcessDoubleQuotes(rng As Range)
 End Sub
 
 ' ==============================================
-' 单引号：' (U+0027) 与 \u2018\u2019(U+2018/U+2019) 互转
+' 单引号：' (U+0027) 与 ''(U+2018/U+2019) 互转
 ' ==============================================
 Private Sub ProcessSingleQuotes(rng As Range)
     Dim pos As Long
@@ -542,8 +544,10 @@ Sub 科研论文排版_存档()
     '功能：基础排版（缩进 + 字体 + 字号），不含智能标点转换
     On Error GoTo ErrorHandler
     
-    If Selection.Type = wdNoSelection Then
-        MsgBox "请先选中需要排版的文本！", vbExclamation, "提示"
+    If Selection.Type = wdNoSelection Or Selection.Type = wdSelectionIP Then
+        MsgBox "请先选中（拖选高亮）需要排版的段落文本，再运行此宏。" & vbCrLf & _
+               "提示：将光标放在段落中但未拖选文字时，宏无法确定作用范围。", _
+               vbExclamation, "科研论文排版"
         Exit Sub
     End If
     
